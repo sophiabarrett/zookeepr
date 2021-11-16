@@ -137,6 +137,16 @@
         "zany"
       ],
       "id": "13"
+    },
+    {
+      "name": "Jeffe",
+      "species": "Giraffe",
+      "diet": "folivore",
+      "personalityTraits": [
+        "anxious",
+        "loving"
+      ],
+      "id": "14"
     }
   ]
 }

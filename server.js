@@ -102,9 +102,21 @@ app.post('/api/animals', (req, res) => {
     }
 });
 
+// set routes to html pages
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, './public/index.html'));
-})
+});
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+});
+app.get('/zookeepers', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/zookeepers.html'));
+});
+
+// add wildcard route
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
 
 // tell server to listen for requests
 app.listen(PORT, () => {
