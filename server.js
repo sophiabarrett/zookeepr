@@ -11,6 +11,8 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data into req.body JS object
 app.use(express.json());
+// tell server where to find front-end files
+app.use(express.static('public'));
 
 function filterByQuery(query, animalsArray) {
     let filteredResults = animalsArray;
@@ -99,6 +101,10 @@ app.post('/api/animals', (req, res) => {
         res.json(animal);
     }
 });
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+})
 
 // tell server to listen for requests
 app.listen(PORT, () => {
