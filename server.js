@@ -3,7 +3,6 @@ const fs = require('fs');
 const path = require('path');
 const { animals } = require('./data/animals.json');
 const PORT = process.env.PORT || 3001;
-
 // instantiate server
 const app = express();
 // parse incoming string or array data into req.body JS object
@@ -12,7 +11,6 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data into req.body JS object
 app.use(express.json());
-
 
 function filterByQuery(query, animalsArray) {
     let filteredResults = animalsArray;
@@ -70,8 +68,6 @@ function createNewAnimal(body, animalsArray) {
     return animal;
 }
 
-
-
 // add routes
 app.get('/api/animals', (req, res) => {
     let results = animals;
@@ -103,7 +99,6 @@ app.post('/api/animals', (req, res) => {
         res.json(animal);
     }
 });
-
 
 // tell server to listen for requests
 app.listen(PORT, () => {
