@@ -108,6 +108,35 @@
         "loving"
       ],
       "id": "10"
+    },
+    {
+      "name": "Larry",
+      "species": "lemur",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "11"
+    },
+    {
+      "name": "Bruce",
+      "species": "buffalo",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry",
+        "loving"
+      ],
+      "id": "12"
+    },
+    {
+      "name": "Jillian",
+      "species": "penguin",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany"
+      ],
+      "id": "13"
     }
   ]
 }
