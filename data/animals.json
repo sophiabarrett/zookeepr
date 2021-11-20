@@ -147,6 +147,16 @@
         "loving"
       ],
       "id": "14"
+    },
+    {
+      "name": "George",
+      "species": "Gorilla",
+      "diet": "folivore",
+      "personalityTraits": [
+        "hungry",
+        "anxious"
+      ],
+      "id": "15"
     }
   ]
 }
