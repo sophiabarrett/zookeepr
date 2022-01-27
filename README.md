@@ -4,7 +4,7 @@
 A simple catalog to keep track of animals and zookeepers.
 
 ## Screenshot
-![screenshot](./screenshot)
+![screenshot](./screenshot.png)
 
 ## Built With
 - Node
